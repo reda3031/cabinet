@@ -6,7 +6,7 @@
     <div class="col-md-7">
         <div class="card border-0 shadow-sm">
             <div class="card-header bg-warning text-white font-weight-bold">
-                <i class="fas fa-edit"></i> {{ __('messages.edit_appointment') }}
+                {{ __('messages.edit_appointment') }}
             </div>
             <div class="card-body">
                 <form action="{{ route('appointments.update', $appointment) }}" method="POST">
@@ -53,10 +53,10 @@
                     </div>
                     <div class="d-flex justify-content-between">
                         <a href="{{ route('appointments.index') }}" class="btn btn-secondary">
-                            <i class="fas fa-arrow-left"></i> {{ __('messages.back') }}
+                            {{ __('messages.back') }}
                         </a>
                         <button type="submit" class="btn btn-warning text-white">
-                            <i class="fas fa-save"></i> {{ __('messages.update') }}
+                            {{ __('messages.update') }}
                         </button>
                     </div>
                 </form>

@@ -25,7 +25,7 @@
                     <td><span class="badge badge-info">{{ $patient->appointments_as_patient_count }}</span></td>
                     <td>
                         <a href="{{ route('admin.patients.history', $patient) }}" class="btn btn-sm btn-outline-primary">
-                            <i class="fas fa-history"></i> {{ __('messages.view_history') }}
+                            {{ __('messages.view_history') }}
                         </a>
                     </td>
                 </tr>
@@ -66,7 +66,7 @@
                                 <td><span class="badge badge-info">${patient.appointments_as_patient_count}</span></td>
                                 <td>
                                     <a href="${url}" class="btn btn-sm btn-outline-primary">
-                                        <i class="fas fa-history"></i> {{ __('messages.view_history') }}
+                                        {{ __('messages.view_history') }}
                                     </a>
                                 </td>
                             </tr>

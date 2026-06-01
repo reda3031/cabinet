@@ -6,14 +6,14 @@
     <h5 class="mb-0 font-weight-bold">{{ __('messages.appointments') }}</h5>
 @if(Auth::check() && in_array(Auth::user()->role, ['patient', 'admin']))
 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#createModal">
-    <i class="fas fa-plus"></i> {{ __('messages.new_rdv') }}
+    {{ __('messages.new_rdv') }}
 </button>
 @endif
 </div>
 
 {{-- Barre de recherche Axios (on la branchera plus tard) --}}
 <div class="mb-3">
-    <input type="text" id="search-input" class="form-control" placeholder="🔍 {{ __('messages.search') }}">
+    <input type="text" id="search-input" class="form-control" placeholder="{{ __('messages.search') }}">
 </div>
 
 <div id="appointments-table">
@@ -49,12 +49,12 @@
                     </td>
                     <td>
                         <a href="{{ route('appointments.edit', $appointment) }}" class="btn btn-sm btn-outline-primary">
-                            <i class="fas fa-edit"></i>
+                            {{ __('messages.update') }}
                         </a>
                         <button class="btn btn-sm btn-outline-danger btn-delete"
                             data-id="{{ $appointment->id }}"
                             data-name="{{ $appointment->patient->name }}">
-                            <i class="fas fa-trash"></i>
+                            {{ __('messages.delete') }}
                         </button>
                     </td>
                 </tr>
@@ -75,7 +75,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header bg-danger text-white">
-                <h5 class="modal-title"><i class="fas fa-exclamation-triangle"></i> {{ __('messages.confirm_delete') }}</h5>
+                <h5 class="modal-title">{{ __('messages.confirm_delete') }}</h5>
                 <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
@@ -98,7 +98,7 @@
         <div class="modal-content">
             <div class="modal-header bg-primary text-white">
                 <h5 class="modal-title">
-                    <i class="fas fa-calendar-plus"></i> {{ __('messages.new_rdv') }}
+                    {{ __('messages.new_rdv') }}
                 </h5>
                 <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
             </div>
@@ -137,7 +137,7 @@
                         {{ __('messages.cancel') }}
                     </button>
                     <button type="submit" class="btn btn-primary">
-                        <i class="fas fa-save"></i> {{ __('messages.save') }}
+                        {{ __('messages.save') }}
                     </button>
                 </div>
             </form>
@@ -202,12 +202,12 @@ searchInput.addEventListener('input', function () {
                         <td><span class="badge badge-${badge}">${translatedStatus}</span></td>
                         <td>
                             <a href="/appointments/${rdv.id}/edit" class="btn btn-sm btn-outline-primary">
-                                <i class="fas fa-edit"></i>
+                                {{ __('messages.update') }}
                             </a>
                             <button class="btn btn-sm btn-outline-danger btn-delete"
                                 data-id="${rdv.id}"
                                 data-name="${rdv.patient ? rdv.patient.name : ''}">
-                                <i class="fas fa-trash"></i>
+                                {{ __('messages.delete') }}
                             </button>
                         </td>
                     </tr>`;

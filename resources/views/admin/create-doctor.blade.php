@@ -6,7 +6,7 @@
     <div class="col-md-7">
         <div class="card border-0 shadow-sm">
             <div class="card-header bg-primary text-white font-weight-bold">
-                <i class="fas fa-user-md"></i> {{ __('messages.add_doctor') }}
+                {{ __('messages.add_doctor') }}
             </div>
             <div class="card-body">
                 <form action="{{ route('admin.doctors.store') }}" method="POST">
@@ -29,10 +29,10 @@
                     </div>
                     <div class="d-flex justify-content-between">
                         <a href="{{ route('admin.doctors') }}" class="btn btn-secondary">
-                            <i class="fas fa-arrow-left"></i> {{ __('messages.back') }}
+                            {{ __('messages.back') }}
                         </a>
                         <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-save"></i> {{ __('messages.save') }}
+                            {{ __('messages.save') }}
                         </button>
                     </div>
                 </form>

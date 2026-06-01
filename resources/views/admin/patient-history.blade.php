@@ -4,7 +4,7 @@
 @section('content')
 <div class="mb-3">
     <a href="{{ route('admin.patients') }}" class="btn btn-secondary btn-sm">
-        <i class="fas fa-arrow-left"></i> {{ __('messages.back') ?? 'Retour' }}
+        {{ __('messages.back') ?? 'Retour' }}
     </a>
 </div>
 
@@ -13,10 +13,10 @@
         <div>
             <h5 class="mb-1 font-weight-bold">{{ $user->name }}</h5>
             <div class="text-muted">
-                <i class="fas fa-envelope mr-1"></i> {{ $user->email }}
+                {{ $user->email }}
                 @if($user->phone)
                     <span class="mx-2">|</span>
-                    <i class="fas fa-phone mr-1"></i> {{ $user->phone }}
+                    {{ $user->phone }}
                 @endif
             </div>
         </div>

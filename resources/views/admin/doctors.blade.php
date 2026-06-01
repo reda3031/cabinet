@@ -5,7 +5,7 @@
 <div class="d-flex justify-content-between align-items-center mb-4">
     <h5 class="mb-0 font-weight-bold">{{ __('messages.doctor_list') }}</h5>
     <a href="{{ route('admin.doctors.create') }}" class="btn btn-primary btn-sm">
-        <i class="fas fa-plus"></i> {{ __('messages.add_doctor') }}
+        {{ __('messages.add_doctor') }}
     </a>
 </div>
 
@@ -32,7 +32,7 @@
                         <button class="btn btn-sm btn-outline-danger btn-delete"
                             data-id="{{ $doctor->id }}"
                             data-name="{{ $doctor->name }}">
-                            <i class="fas fa-trash"></i>
+                            {{ __('messages.delete') }}
                         </button>
                     </td>
                 </tr>
@@ -51,7 +51,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header bg-danger text-white">
-                <h5 class="modal-title"><i class="fas fa-exclamation-triangle"></i> {{ __('messages.confirm_delete') }}</h5>
+                <h5 class="modal-title">{{ __('messages.confirm_delete') }}</h5>
                 <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
@@ -111,7 +111,7 @@
                                     <button class="btn btn-sm btn-outline-danger btn-delete"
                                         data-id="${doctor.id}"
                                         data-name="${doctor.name}">
-                                        <i class="fas fa-trash"></i>
+                                        {{ __('messages.delete') }}
                                     </button>
                                 </td>
                             </tr>

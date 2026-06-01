@@ -63,8 +63,8 @@ return [
     'view_history' => 'Voir historique',
     'total_appointments' => 'Total RDV',
     'no_history' => 'Aucun rendez-vous trouvé pour ce patient',
-    'search_doctor' => '🔍 Rechercher un médecin...',
+    'search_doctor' => 'Rechercher un médecin...',
     'no_doctor_found' => 'Aucun médecin trouvé',
-    'search_patient' => '🔍 Rechercher un patient...',
+    'search_patient' => 'Rechercher un patient...',
     'no_patient_found' => 'Aucun patient trouvé',
 ];

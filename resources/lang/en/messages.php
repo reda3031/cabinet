@@ -63,8 +63,8 @@ return [
     'view_history' => 'View History',
     'total_appointments' => 'Total Appointments',
     'no_history' => 'No appointments found for this patient',
-    'search_doctor' => '🔍 Search a doctor...',
+    'search_doctor' => 'Search a doctor...',
     'no_doctor_found' => 'No doctor found',
-    'search_patient' => '🔍 Search a patient...',
+    'search_patient' => 'Search a patient...',
     'no_patient_found' => 'No patient found',
 ];

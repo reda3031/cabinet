@@ -20,19 +20,19 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🏥 Cabinet <span>Médical</span></h1>
+            <h1>Cabinet <span>Médical</span></h1>
         </div>
         <div class="body">
             <h2>Bonjour {{ $appointment->patient->name }},</h2>
             <p>Votre rendez-vous a été enregistré avec succès. Voici les détails :</p>
 
             <div class="info-box">
-                <p><strong>👨‍⚕️ Médecin :</strong> {{ $appointment->medecin->name }}</p>
-                <p><strong>🏥 Service :</strong> {{ $appointment->service->name }}</p>
-                <p><strong>📅 Date :</strong> {{ \Carbon\Carbon::parse($appointment->appointment_date)->format('d/m/Y à H:i') }}</p>
-                <p><strong>📋 Statut :</strong> <span class="badge">En attente</span></p>
+                <p><strong>Médecin :</strong> {{ $appointment->medecin->name }}</p>
+                <p><strong>Service :</strong> {{ $appointment->service->name }}</p>
+                <p><strong>Date :</strong> {{ \Carbon\Carbon::parse($appointment->appointment_date)->format('d/m/Y à H:i') }}</p>
+                <p><strong>Statut :</strong> <span class="badge">En attente</span></p>
                 @if($appointment->notes)
-                <p><strong>📝 Notes :</strong> {{ $appointment->notes }}</p>
+                <p><strong>Notes :</strong> {{ $appointment->notes }}</p>
                 @endif
             </div>
 

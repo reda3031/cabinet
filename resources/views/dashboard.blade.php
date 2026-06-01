@@ -12,40 +12,25 @@ $userRole = Auth::user()->role;
 <div class="row">
     <div class="col-md-4">
         <div class="card border-0 shadow-sm mb-4">
-            <div class="card-body d-flex align-items-center gap-3">
-                <div style="width:50px;height:50px;background:#e8f4fd;border-radius:12px;display:flex;align-items:center;justify-content:center;">
-                    <i class="fas fa-calendar-check text-primary fa-lg"></i>
-                </div>
-                <div>
-                    <div class="text-muted" style="font-size:0.8rem">{{ __('messages.appointments') }}</div>
-                    <div class="font-weight-bold" style="font-size:1.4rem">{{ $totalAppointments }}</div>
-                </div>
+            <div class="card-body">
+                <div class="text-muted" style="font-size:0.85rem">{{ __('messages.appointments') }}</div>
+                <div class="font-weight-bold" style="font-size:1.5rem">{{ $totalAppointments }}</div>
             </div>
         </div>
     </div>
     <div class="col-md-4">
         <div class="card border-0 shadow-sm mb-4">
-            <div class="card-body d-flex align-items-center gap-3">
-                <div style="width:50px;height:50px;background:#e8fdf0;border-radius:12px;display:flex;align-items:center;justify-content:center;">
-                    <i class="fas fa-users text-success fa-lg"></i>
-                </div>
-                <div>
-                    <div class="text-muted" style="font-size:0.8rem">{{ __('messages.patients') }}</div>
-                    <div class="font-weight-bold" style="font-size:1.4rem">{{ $totalPatients }}</div>
-                </div>
+            <div class="card-body">
+                <div class="text-muted" style="font-size:0.85rem">{{ __('messages.patients') }}</div>
+                <div class="font-weight-bold" style="font-size:1.5rem">{{ $totalPatients }}</div>
             </div>
         </div>
     </div>
     <div class="col-md-4">
         <div class="card border-0 shadow-sm mb-4">
-            <div class="card-body d-flex align-items-center gap-3">
-                <div style="width:50px;height:50px;background:#f3e8fd;border-radius:12px;display:flex;align-items:center;justify-content:center;">
-                    <i class="fas fa-user-md fa-lg" style="color: #6f42c1;"></i>
-                </div>
-                <div>
-                    <div class="text-muted" style="font-size:0.8rem">{{ __('messages.doctor') }}</div>
-                    <div class="font-weight-bold" style="font-size:1.4rem">{{ $totalMedecins }}</div>
-                </div>
+            <div class="card-body">
+                <div class="text-muted" style="font-size:0.85rem">{{ __('messages.doctor') }}</div>
+                <div class="font-weight-bold" style="font-size:1.5rem">{{ $totalMedecins }}</div>
             </div>
         </div>
     </div>
@@ -54,40 +39,25 @@ $userRole = Auth::user()->role;
 <div class="row">
     <div class="col-md-4">
         <div class="card border-0 shadow-sm mb-4">
-            <div class="card-body d-flex align-items-center gap-3">
-                <div style="width:50px;height:50px;background:#e8f4fd;border-radius:12px;display:flex;align-items:center;justify-content:center;">
-                    <i class="fas fa-calendar-check text-primary fa-lg"></i>
-                </div>
-                <div>
-                    <div class="text-muted" style="font-size:0.8rem">{{ __('messages.appointments') }}</div>
-                    <div class="font-weight-bold" style="font-size:1.4rem">{{ $totalAppointments }}</div>
-                </div>
+            <div class="card-body">
+                <div class="text-muted" style="font-size:0.85rem">{{ __('messages.appointments') }}</div>
+                <div class="font-weight-bold" style="font-size:1.5rem">{{ $totalAppointments }}</div>
             </div>
         </div>
     </div>
     <div class="col-md-4">
         <div class="card border-0 shadow-sm mb-4">
-            <div class="card-body d-flex align-items-center gap-3">
-                <div style="width:50px;height:50px;background:#fff8e6;border-radius:12px;display:flex;align-items:center;justify-content:center;">
-                    <i class="fas fa-clock text-warning fa-lg"></i>
-                </div>
-                <div>
-                    <div class="text-muted" style="font-size:0.8rem">{{ __('messages.pending') }}</div>
-                    <div class="font-weight-bold" style="font-size:1.4rem">{{ $pendingCount }}</div>
-                </div>
+            <div class="card-body">
+                <div class="text-muted" style="font-size:0.85rem">{{ __('messages.pending') }}</div>
+                <div class="font-weight-bold" style="font-size:1.5rem">{{ $pendingCount }}</div>
             </div>
         </div>
     </div>
     <div class="col-md-4">
         <div class="card border-0 shadow-sm mb-4">
-            <div class="card-body d-flex align-items-center gap-3">
-                <div style="width:50px;height:50px;background:#e8fdf0;border-radius:12px;display:flex;align-items:center;justify-content:center;">
-                    <i class="fas fa-check-circle text-success fa-lg"></i>
-                </div>
-                <div>
-                    <div class="text-muted" style="font-size:0.8rem">{{ __('messages.confirmed') }}</div>
-                    <div class="font-weight-bold" style="font-size:1.4rem">{{ $confirmedCount }}</div>
-                </div>
+            <div class="card-body">
+                <div class="text-muted" style="font-size:0.85rem">{{ __('messages.confirmed') }}</div>
+                <div class="font-weight-bold" style="font-size:1.5rem">{{ $confirmedCount }}</div>
             </div>
         </div>
     </div>
