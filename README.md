@@ -2,16 +2,35 @@
 
 Application web de gestion des rendez-vous d'un cabinet médical, développée avec Laravel 12.
 
+## Cadre du projet
+
+Ce projet est réalisé dans le cadre du Contrôle Continu 2.
+
+| Élément | Information |
+|---|---|
+| Établissement | Office de la Formation Professionnelle et de la Promotion du Travail |
+| Module | Développer en back end |
+| Type d'évaluation | Contrôle Continu 2 |
+| Sujet | Application web de gestion des rendez-vous d'un cabinet médical |
+
 ## Technologies utilisées
 
-- Laravel 12
-- PHP 8.2+
-- MySQL
-- Bootstrap 4
-- Axios
-- Vite
-- Mailtrap pour les emails de confirmation
-- Pest / PHPUnit pour les tests
+| Technologie | Version utilisée |
+|---|---|
+| Laravel | 12.57.0 |
+| PHP | 8.4.19 |
+| Laravel Sanctum | 4.3.1 |
+| MySQL | 8.0+ |
+| Bootstrap | 4.5.2 |
+| jQuery | 3.5.1 |
+| Axios | 1.15.2 |
+| Vite | 7.3.2 |
+| Laravel Vite Plugin | 2.1.0 |
+| Tailwind CSS | 4.2.4 |
+| Node.js | 25.2.1 |
+| npm | 11.12.1 |
+| Pest | 3.8.6 |
+| Mailtrap | SMTP |
 
 ## Fonctionnalités
 
@@ -39,7 +58,7 @@ Application web de gestion des rendez-vous d'un cabinet médical, développée a
 
 ```bash
 git clone https://github.com/reda3031/cabinet.git
-cd prjt_cc2-main
+cd cabinet
 ```
 
 2. Installer les dépendances PHP et JavaScript
